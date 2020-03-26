@@ -10,4 +10,10 @@ set(CMAKE_EXE_LINKER_FLAGS)
 find_package (Threads)
 
 # 包含子项目。
+if (WIN32)
+	add_subdirectory ("LearnOpenGL")
+endif (WIN32)
+
+
+
 add_subdirectory ("LearnProgramC")

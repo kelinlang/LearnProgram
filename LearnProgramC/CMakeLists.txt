@@ -10,4 +10,6 @@ file(GLOB CommonLib_src_list ${CommonLibRoot}/*/*.cpp ${CommonLibHeader}/*/*.h $
 # 将源代码添加到此项目的可执行文件。
 add_executable (LearnProgramC "LearnProgramC.cpp" "LearnProgramC.h"  ${CommonLib_src_list})
 
+
+add_subdirectory("tests")
 # TODO: 如有需要，请添加测试并安装目标。
